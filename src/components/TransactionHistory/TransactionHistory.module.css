@@ -1,10 +1,11 @@
+
 .transaction_history {
   margin: 0 auto;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
 
   border-collapse: collapse;
-  /*убираем пустые промежутки между ячейками*/
+
   border-radius: 3px;
   overflow: hidden;
 }
@@ -29,6 +30,11 @@
   border-radius: 3px;
 }
 
+.head_line:hover,
+.head_line:focus {
+  background-color: #579cdc;
+}
+
 .th {
   width: 220px;
 
@@ -44,9 +50,6 @@
   color: #777f88;
 }
 
-.tr:hover {
-  background-color: #bbbbbb;
-}
 
 .td {
   width: 220px;
@@ -55,8 +58,16 @@
   border: 1px solid #e3e5e6;
 }
 
+
 .body_line:nth-child(2n) {
   background-color: #ecf1f4;
+  color: #26282b;
+}
+
+.body_line:hover,
+.body_line:focus {
+  background-color: #9eaeca;
+  color:#26282b;
 }
 
 .td_type:first-letter {

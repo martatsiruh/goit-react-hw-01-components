@@ -27,16 +27,18 @@ export const App = () => {
       />
       </Section>
       
+      <Section>
+        <Statistics title="Upload stats" stats={statisticalData}></Statistics>
+        <Statistics stats={statisticalData} />
+      </Section>
 
-      <Statistics title="Upload stats" stats={statisticalData}></Statistics>
-      <Statistics stats={statisticalData} />
-      
       <Section>
         <FriendList friends={friends} />
       </Section>
 
-      <TransactionHistory items={transactions} />
-
+      <Section>
+        <TransactionHistory items={transactions} />
+      </Section>
     </div>
   );
 };
